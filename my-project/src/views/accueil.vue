@@ -22,7 +22,6 @@ export default {
 
 
 <style scoped>
-
 .accueil {
  padding: 30px;
 }
