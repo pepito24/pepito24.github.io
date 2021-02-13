@@ -2,19 +2,24 @@
   
   <div class="form">
   <h1 class="text-center">Contact</h1>
+
     <form v-on:submit.prevent>
+    
       <div class="form-group">
         <label for="nom">Nom</label>
         <input type="text" class="form-control" name="nom" id="nom">
       </div>
+
       <div class="form-group">
         <label for="prenom">Prénom</label>
         <input type="text" class="form-control" name="prenom" id="prenom">
       </div>
+
       <div class="form-group">
         <label for="courriel">Courriel</label>
         <input type="email" class="form-control" name="courriel" id="courriel">
       </div>
+
       <div class="form-group">
         <label for="cateorie">Catégorie</label>
         <select name="categorie" id="cateorie" class="form-control">
@@ -33,6 +38,8 @@
 
 
 <script>
+
+
 export default {
   name: "Contact",
   data() {
@@ -47,6 +54,8 @@ export default {
     }
   }
 }
+
+
 </script>
 
 <style scoped>
