@@ -1,37 +1,39 @@
 <template>
   <div class="header">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-            <li class="nav-item active">
-               <router-link to="/">Accueil</router-link>
-            </li>
-            <li class="nav-item">
-               <router-link to="/contact">Contact</router-link>
-            </li>
-            <li class="nav-item">
-               <router-link to="/projet">Projet</router-link>
-            </li>
-            </ul>
-        </div>
+         <p v-for="item in menu" :key="item.name">
+           <router-link :to="{path:item.nom}" > {{item.nom}} </router-link>
+         </p>     
     </nav>
 </div>
-
-
 </template>
 
 <script>
-export default {
+export default{
   name: "Header",
-};
+   data(){
+      return{
+      menu:[
+            {nom: "Accueil", path: "/"},
+            {nom: "Projet", path: "/projet"},
+            {nom: "Contact", path: "/contact",}
+         ],
+
+      
+      }
+   }
+}
 </script>
 
-
-
-
 <style scoped>
+
 .header li{
  padding: 30px 10px;
+}
+
+p{
+ font-size: 20px;
+ padding:10px;
 }
 
 </style>

@@ -6,6 +6,7 @@ import Projet from './views/Projet.vue';
 
 const routes = [
   { path: '/', component: Accueil },
+  { path: '/accueil', component: Accueil },
   { path: '/contact', component: Contact },
   { path: '/projet', component: Projet },
 ];
