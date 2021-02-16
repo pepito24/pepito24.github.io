@@ -3,7 +3,7 @@
   <div v-if="showProfil"><Profil></Profil></div>
       <div v-else class="accueil">
         <div class="title">
-          <h1>Accueil</h1>
+          <h1>{{ message }}</h1>
 
         </div>
         <div>
@@ -20,9 +20,11 @@
 
 <script>
 import Profil from "./Profil.vue";
+import {mixin} from "../mixins/mixin.js";
 
 
 export default {
+  mixins: [mixin],
   name: "Accueil",
   components: {
     Profil
@@ -30,6 +32,7 @@ export default {
   data() {
       return {
           showProfil: false,
+           message: "Accueil",
       }
   },
 

@@ -1,22 +1,18 @@
 <template>
-  
   <footer class="footer">
-    <div>
-      <p class="text-align-center">Copyright &copy; -Le Corsaire du web - All Rights Reserved</p>
-    </div>
-   
+      <p class="text-align-center" v-copyright></p>  
   </footer>
 </template>
 
 
 <script>
-export default {
-  name: "Footer",
-};
+
 </script>
 
 
+
 <style scoped>
+
 .footer {
   bottom: 0;
   left: 0;
@@ -30,4 +26,5 @@ export default {
 .footer p {
  margin-bottom: 0;
 }
+
 </style>
