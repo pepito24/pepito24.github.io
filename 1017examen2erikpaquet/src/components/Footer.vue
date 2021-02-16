@@ -6,7 +6,16 @@
 
 
 <script>
-
+export default {
+  name: "Footer",
+  directives: {
+      copyright: {
+       bind: function(el) {
+         el.innerHTML = 'Copyright ©' + new Date().getFullYear() + "- Le Corsaire du Web" + el.innerHTML ;
+      },
+    },
+  }
+}
 </script>
 
 
