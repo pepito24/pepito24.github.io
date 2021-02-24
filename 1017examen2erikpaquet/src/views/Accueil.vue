@@ -6,6 +6,7 @@
           <h1>{{ message }}</h1>
         </div>
         <div>
+        
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
@@ -16,6 +17,8 @@
       </div>
     </div>
 </template>
+
+
 
 <script>
 import Profil from "./Profil.vue";
