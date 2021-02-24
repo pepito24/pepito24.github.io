@@ -1,9 +1,8 @@
 <template>
   <footer class="footer">
-      <p class="text-align-center" v-copyright></p>  
+      <p class="text-align-center" v-copyright> </p>  
   </footer>
 </template>
-
 
 <script>
 export default {
@@ -17,8 +16,6 @@ export default {
   }
 }
 </script>
-
-
 
 <style scoped>
 

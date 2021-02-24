@@ -4,7 +4,6 @@
       <div v-else class="accueil">
         <div class="title">
           <h1>{{ message }}</h1>
-
         </div>
         <div>
           <p>
@@ -21,7 +20,6 @@
 <script>
 import Profil from "./Profil.vue";
 import {mixin} from "../mixins/mixin.js";
-
 
 export default {
   mixins: [mixin],
